@@ -1,7 +1,21 @@
 #! /usr/bin/env python3
 import re
 import sys
+import os
 
+os.system('color')
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    
 file = sys.argv[2]
 
 if sys.argv[1] == "find":
@@ -24,7 +38,7 @@ if sys.argv[1] == "find":
         lines=ofile.readlines()
         for match in matches:
             x = match["line_number"]
-            print(lines[x - 1] + "........ line " + str(match["line_number"]))
+            print(bcolors.WARNING + lines[x - 1] + bcolors.ENDC + bcolors.OKCYAN + "........ line " + str(match["line_number"]) + bcolors.ENDC)
 
 elif sys.argv[1] == "replace":
 
