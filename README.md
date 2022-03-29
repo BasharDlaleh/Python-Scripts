@@ -10,11 +10,13 @@ this script can search for a string in a file and return all occurences along wi
 this will generate an output that contains every line that contain the word along with the line number
 
 ###### example output :
-$ ./find_replace_lines_script.py find /home/Python/test.txt test
 
 first test line
+
 ........ line 1
+
 second test line
+
 ........ line 2
 
 #### to replace a line :
