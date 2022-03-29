@@ -11,6 +11,7 @@ this will generate an output that contains every line that contain the word alon
 
 ###### example output :
 $ ./find_replace_lines_script.py find /home/Python/test.txt test
+
 first test line
 ........ line 1
 second test line
