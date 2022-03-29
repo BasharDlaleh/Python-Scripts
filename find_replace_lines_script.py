@@ -3,7 +3,8 @@ import re
 import sys
 import os
 
-os.system('color')
+if sys.platform == "win32":
+    os.system('color')
 
 class bcolors:
     HEADER = '\033[95m'
